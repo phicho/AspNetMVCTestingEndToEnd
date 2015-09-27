@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSite.UnitTests", "Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSite.IntegrationTests", "BankingSite.IntegrationTests\BankingSite.IntegrationTests.csproj", "{CA9D31BA-7A2F-445B-9A53-B95B52A80B46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSite.ControllerTests", "BankingSite.ControllerTests\BankingSite.ControllerTests.csproj", "{C2DCF67B-DDAB-408A-8484-30A4287F4A00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{CA9D31BA-7A2F-445B-9A53-B95B52A80B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9D31BA-7A2F-445B-9A53-B95B52A80B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9D31BA-7A2F-445B-9A53-B95B52A80B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DCF67B-DDAB-408A-8484-30A4287F4A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DCF67B-DDAB-408A-8484-30A4287F4A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DCF67B-DDAB-408A-8484-30A4287F4A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DCF67B-DDAB-408A-8484-30A4287F4A00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
