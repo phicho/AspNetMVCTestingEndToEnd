@@ -3,6 +3,7 @@ using BankingSite.Controllers;
 using BankingSite.Models;
 using Moq;
 using NUnit.Framework;
+using TestStack.FluentMVCTesting;
 
 namespace BankingSite.ControllerTests
 {
@@ -17,9 +18,8 @@ namespace BankingSite.ControllerTests
 
             var sut = new LoanApplicationController(fakeRepo.Object, fakeAppScorer.Object);
 
-            var result = sut.Apply() as ViewResult;
+            sut.WithCallTo(x => x.Apply()).ShouldRenderDefaultView();
 
-            Assert.That(result.ViewName, Is.EqualTo("Apply"));
         }
     }
 }
