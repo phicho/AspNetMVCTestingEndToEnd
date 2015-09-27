@@ -22,7 +22,7 @@ namespace BankingSite.Controllers
 
         public ActionResult Contact()
         {
-            return Redirect("http://pluralsight.com");
+            return Redirect("https://mk.linkedin.com/in/filipmitkovski");
         }
     }
 }
