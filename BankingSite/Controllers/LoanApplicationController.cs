@@ -17,7 +17,7 @@ namespace BankingSite.Controllers
 
         public ActionResult Apply()
         {
-            return View();
+            return View("Apply");
         }
 
         [HttpPost]
