@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.Entity;
-
+using NUnit.Framework;
 
 namespace BankingSite.IntegrationTests
 {
+    [SetUpFixture]
     public class TestFixtureLifeCycle
     {
         public TestFixtureLifeCycle()
@@ -30,7 +27,7 @@ namespace BankingSite.IntegrationTests
 
         private static void EnsureDataDirectoryConnectionStringPlaceHolderIsSet()
         {
-           AppDomain.CurrentDomain.SetData("DataDirectory", NUnit.Framework.TestContext.CurrentContext.TestDirectory);
+           AppDomain.CurrentDomain.SetData("DataDirectory", TestContext.CurrentContext.TestDirectory);
         }
     }
 }
